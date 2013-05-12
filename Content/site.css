@@ -1,0 +1,91 @@
+* { font-size: 100%; font-family: Segoe UI Light, Segoe UI, Helvetica, Garuda, Arial, sans-serif; color: #888888; }
+
+html, body { margin: 0; border: 0; padding: 0; height: 100%; width: 100%; background: #eeeeee; }
+
+table { width: 100%; }
+
+input, textarea { margin: 0; padding: 0; }
+
+.container { position: relative; margin: 0 auto; min-height: 100%; width: 1000px; background: #ffffff; box-shadow: 0 -20px 33px #888888; }
+
+.head {  }
+.logo { float: left; margin: 20px 0 0 50px; border: 0; }
+.menu { float: right; margin: 40px 50px 0 0; font-size: 16pt; }
+.menu .link { margin: 0 10px; padding-bottom: 10px; }
+.menu .link:hover { 
+	border-bottom: 2px solid #22a8db; 
+	padding-bottom: 5px;
+	transition: padding 0.5s, color 0.5s;
+	-moz-transition: padding 0.5s, color 0.5s; 
+	-webkit-transition: padding 0.5s, color 0.5s; 
+	-o-transition: padding 0.5s, color 0.5s; 
+}
+
+.graphic { height: 250px; width: 1000px; }
+.tagline { position: relative; top: -150px; left: 100px; font-size: 36pt; color: #ffffff; }
+.monitor { position: relative; top: -150px; left: 100px; margin: 15px 5px; }
+.phone { position: relative; top: -150px; left: 100px; margin: 15px 5px; }
+.shield { position: relative; top: -150px; left: 100px; margin: 15px 5px; }
+.badge { position: relative; top: -150px; left: 100px; margin: 15px 5px; }
+
+.body { position: relative; top: -100px; margin: 0 50px; }
+
+.aboutBlock { margin: 0 50px 50px 50px; font-size: 18pt; line-height: 30px; }
+.aboutBlock p { font-size: 16px; line-height: 24px; }
+
+.newsBlock { margin: 0 50px; border-bottom: 1px solid #888888; font-size: 12pt; }
+.newsBlock p { font-size: 16px; line-height: 24px; }
+
+.productsBlock { border-spacing: 50px 0; }
+.productsBlock td { border-bottom: 1px solid #888888; width: 50%; font-size: 18pt; }
+.productsBlock strong:first-child { color: #22a8db; }
+.productsBlock p { height: 100px; font-size: 16px; line-height: 24px; }
+.productsBlock .link { float: right; color: #22a8db; }
+.productsBlock .link:hover { 
+	color: #888888 !important;
+	transition: color 0.5s;
+	-moz-transition: color 0.5s; 
+	-webkit-transition: color 0.5s; 
+	-o-transition: color 0.5s; 
+}
+.productsBlock .link span { padding: 0 10px 0 0; color: #22a8db; }
+.productsBlock .link:hover span { 
+	padding: 0 0 0 10px;
+	color: #888888 !important;
+	transition: padding 0.5s, color 0.5s;
+	-moz-transition: padding 0.5s, color 0.5s; 
+	-webkit-transition: padding 0.5s, color 0.5s; 
+	-o-transition: padding 0.5s, color 0.5s; 
+}
+
+.productBlock { border-spacing: 10px; }
+.productBlock .link { float: right; color: #ff9900; }
+.productBlock .link:hover { 
+	color: #888888 !important;
+	transition: color 0.5s;
+	-moz-transition: color 0.5s; 
+	-webkit-transition: color 0.5s; 
+	-o-transition: color 0.5s; 
+}
+.productBlock .link span { padding: 0 10px 0 0; color: #ff9900; }
+.productBlock .link:hover span { 
+	padding: 0 0 0 10px;
+	color: #888888 !important;
+	transition: padding 0.5s, color 0.5s;
+	-moz-transition: padding 0.5s, color 0.5s; 
+	-webkit-transition: padding 0.5s, color 0.5s; 
+	-o-transition: padding 0.5s, color 0.5s; 
+}
+.productBlock .included { padding: 0 10px 0 0; color: green; }
+.productBlock .excluded { padding: 0 10px 0 0; color: maroon; }
+
+.contactBlock { margin: 0 50px; }
+.contactBlock table { border-spacing: 10px; }
+
+.link { cursor: pointer; color: #888888; }
+.link:hover, .link.active  { color: #22a8db !important; }
+
+.button { border: 1px solid #888888; padding: 5px 10px; cursor: pointer; color: #888888; }
+.button:hover { border: 1px solid #ff9900; color: #ff9900 !important; }
+
+.foot { position: absolute; bottom: 10px; width: 100%; font-size: 10pt; text-align: center; }

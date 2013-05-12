@@ -1,0 +1,54 @@
+<script type="text/javascript">
+    $(function () {
+        $('#submit').on('click', function () { submitEmail(); });
+        $('#reset').on('click', function () { resetEmail(); });
+    });
+
+    function submitEmail() {
+        var to = 'sales@viiops.com';
+        var subject = '';
+        var body = 'From: ' + $('#name').val() + ' ' + 'Email: ' + $('#email').val() + ' ' + 'Message: ' + $('#message').val();
+
+        var mailer = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+
+        document.forms['emailForm'].action = mailer;
+        document.forms['emailForm'].submit();
+    }
+
+    function resetEmail() {
+        $('#name').val('');
+        $('#email').val('');
+        $('#message').val('');
+    }    
+</script>
+
+<div class="contactBlock">
+    <form method="get" enctype="multipart/form-data" id="emailForm">
+        <table>
+            <tr>
+                <td>NAME:</td>
+                <td><input type="text" id="name" style="width: 50%;"/></td>                
+            </tr>
+            <tr>
+                <td>EMAIL:</td>
+                <td><input type="text" id="email" style="width: 50%;"/></td>                
+            </tr>
+            <tr>
+                <td style="vertical-align: top;">MESSAGE:</td>
+                <td><textarea cols="85" rows="10" id="message"></textarea></td>                
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    <span id="submit" class="button">SUBMIT</span>
+                    <span id="reset" class="button">RESET</span>
+                </td>                
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <br /><br />
+                    Viiops Inc. &bull; 2233 Eagles Nest Lane, Monroeville PA, 15146 &bull; 724.875.7351
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>                
